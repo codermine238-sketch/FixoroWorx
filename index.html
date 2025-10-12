@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixoro Worx</title>
+  <style>
+    :root {
+      --fixoro-blue: #1f4f5a;
+      --fixoro-orange: #f48c06;
+      --fixoro-light: #f5f7fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--fixoro-light);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background-color: var(--fixoro-blue);
+      color: white;
+      padding: 18px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      width: 60px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--fixoro-orange);
+    }
+
+    .quote-btn {
+      background: linear-gradient(90deg, var(--fixoro-orange), #ffb703);
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .quote-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: linear-gradient(to right, rgba(31, 79, 90, 0.95), rgba(244, 140, 6, 0.9)),
+                  url('images/banner-bg.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      margin-top: 80px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 60px 40px;
+      background: rgba(0, 0, 0, 0.45);
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero h2 {
+      font-size: 52px;
+      margin-bottom: 18px;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #f2f2f2;
+    }
+
+    .hero button {
+      background: linear-gradient(90deg, var(--fixoro-orange), #ffb703);
+      border: none;
+      color: white;
+      padding: 15px 40px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 17px;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .hero button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ===== QUOTE SECTION ===== */
+    .quote-section {
+      background: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .quote-section h2 {
+      font-size: 32px;
+      color: var(--fixoro-blue);
+      margin-bottom: 15px;
+    }
+
+    .quote-section p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .quote-section button {
+      background: linear-gradient(90deg, var(--fixoro-orange), #ffb703);
+      color: white;
+      border: none;
+      padding: 14px 36px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .quote-section button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    /* ===== SERVICES ===== */
+    section.services {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: white;
+    }
+
+    .services h2 {
+      font-size: 32px;
+      color: var(--fixoro-blue);
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .services h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--fixoro-orange);
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .service {
+      width: 230px;
+      background: var(--fixoro-light);
+      border-radius: 12px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .service img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      color: var(--fixoro-orange);
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ===== CONTACT ===== */
+    section.contact {
+      background: var(--fixoro-blue);
+      color: white;
+      padding: 80px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 70px;
+    }
+
+    .contact-info {
+      max-width: 300px;
+    }
+
+    .contact-info h3 {
+      color: var(--fixoro-orange);
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    form {
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    form input,
+    form textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+
+    form button {
+      background: linear-gradient(90deg, var(--fixoro-orange), #ffb703);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      background-color: var(--fixoro-blue);
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Fixoro Worx Logo" class="logo">
+      <h1>Fixoro Worx</h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <button class="quote-btn" id="quoteTop">Get Quote</button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Your One-Stop Solution for Home & Business</h2>
+      <p>Expert solar, woodwork, CCTV & advertisement services — all under one roof.</p>
+      <button id="quoteBtn">Request Free Quote</button>
+    </div>
+  </section>
+
+  <!-- QUOTE SECTION -->
+  <section class="quote-section">
+    <h2>Get a Free Quote Today</h2>
+    <p>Talk to our experts to get a customized quote for your next project.</p>
+    <button id="quoteBtn2">Request Quote</button>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service"><img src="images/solar.png" alt=""><h3>Solar Systems</h3><p>Efficient solar panel installation & maintenance.</p></div>
+      <div class="service"><img src="images/woodwork.png" alt=""><h3>Woodwork</h3><p>Custom furniture & carpentry crafted with care.</p></div>
+      <div class="service"><img src="images/camera.png" alt=""><h3>Security Cameras</h3><p>Smart surveillance for homes & offices.</p></div>
+      <div class="service"><img src="images/ad.png" alt=""><h3>Advertisement</h3><p>Professional signage & branding solutions.</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>📞 +92 301 9800296</p>
+      <p>✉️ fixoraworx.pk@gmail.com</p>
+      <p>📍 Lahore, Pakistan</p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Phone Number" required>
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Fixoro Worx. All Rights Reserved.
+  </footer>
+
+  <script>
+    // 🔽 Smooth scroll
+    document.getElementById("quoteBtn").addEventListener("click", () => {
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
+    document.getElementById("quoteTop").addEventListener("click", () => {
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
+    document.getElementById("quoteBtn2").addEventListener("click", () => {
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

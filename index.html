@@ -24,7 +24,6 @@
       overflow-x: hidden;
     }
 
-    /* ===== HEADER ===== */
     header {
       background-color: var(--fixoro-blue);
       color: white;
@@ -87,7 +86,6 @@
       transform: translateY(-2px);
     }
 
-    /* ===== HERO SECTION ===== */
     .hero {
       width: 100%;
       height: 90vh;
@@ -96,7 +94,7 @@
       justify-content: center;
       position: relative;
       background: linear-gradient(to right, rgba(31, 79, 90, 0.95), rgba(244, 140, 6, 0.9)),
-                  url('images/banner-bg.jpg') center/cover no-repeat;
+                  url('banner-bg.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
       margin-top: 80px;
@@ -140,7 +138,6 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
-    /* ===== QUOTE SECTION ===== */
     .quote-section {
       background: white;
       text-align: center;
@@ -175,7 +172,6 @@
       transform: translateY(-2px);
     }
 
-    /* ===== SERVICES ===== */
     section.services {
       text-align: center;
       padding: 80px 20px;
@@ -239,7 +235,6 @@
       color: #555;
     }
 
-    /* ===== CONTACT ===== */
     section.contact {
       background: var(--fixoro-blue);
       color: white;
@@ -312,12 +307,10 @@
     }
   </style>
 </head>
-
 <body>
-  <!-- HEADER -->
   <header>
     <div class="logo-area">
-      <img src="images/logo.png" alt="Fixoro Worx Logo" class="logo">
+      <img src="logo.png" alt="Fixoro Worx Logo" class="logo">
       <h1>Fixoro Worx</h1>
     </div>
     <nav>
@@ -328,7 +321,6 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
   <section class="hero" id="home">
     <div class="hero-content">
       <h2>Your One-Stop Solution for Home & Business</h2>
@@ -337,57 +329,55 @@
     </div>
   </section>
 
-  <!-- QUOTE SECTION -->
   <section class="quote-section">
     <h2>Get a Free Quote Today</h2>
     <p>Talk to our experts to get a customized quote for your next project.</p>
     <button id="quoteBtn2">Request Quote</button>
   </section>
 
-  <!-- SERVICES -->
   <section class="services" id="services">
     <h2>Our Services</h2>
     <div class="service-grid">
-      <div class="service"><img src="images/solar.png" alt=""><h3>Solar Systems</h3><p>Efficient solar panel installation & maintenance.</p></div>
-      <div class="service"><img src="images/woodwork.png" alt=""><h3>Woodwork</h3><p>Custom furniture & carpentry crafted with care.</p></div>
-      <div class="service"><img src="images/camera.png" alt=""><h3>Security Cameras</h3><p>Smart surveillance for homes & offices.</p></div>
-      <div class="service"><img src="images/ad.png" alt=""><h3>Advertisement</h3><p>Professional signage & branding solutions.</p></div>
+      <div class="service"><img src="solar.png" alt=""><h3>Solar Systems</h3><p>Efficient solar panel installation & maintenance.</p></div>
+      <div class="service"><img src="woodwork.png" alt=""><h3>Woodwork</h3><p>Custom furniture & carpentry crafted with care.</p></div>
+      <div class="service"><img src="camera.png" alt=""><h3>Security Cameras</h3><p>Smart surveillance for homes & offices.</p></div>
+      <div class="service"><img src="ad.png" alt=""><h3>Advertisement</h3><p>Professional signage & branding solutions.</p></div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="contact-info">
-      <h3>Contact Information</h3>
-      <p>📞 +92 301 9800296</p>
-      <p>✉️ fixoraworx.pk@gmail.com</p>
-      <p>📍 Lahore, Pakistan</p>
-    </div>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-info">
+    <h3>Contact Information</h3>
+    <p>📞 +92 301 9800296</p>
+    <p>✉️ fixoraworx.pk@gmail.com</p>
+    <p>📍 Lahore, Pakistan</p>
+  </div>
 
-    <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="text" placeholder="Phone Number" required>
-      <textarea rows="4" placeholder="Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Phone Number" required>
+    <textarea rows="4" placeholder="Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-  <footer>
-    © 2025 Fixoro Worx. All Rights Reserved.
-  </footer>
+<footer>
+  © 2025 Fixoro Worx. All Rights Reserved.
+</footer>
 
-  <script>
-    // 🔽 Smooth scroll
-    document.getElementById("quoteBtn").addEventListener("click", () => {
-      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-    });
-    document.getElementById("quoteTop").addEventListener("click", () => {
-      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-    });
-    document.getElementById("quoteBtn2").addEventListener("click", () => {
-      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-    });
-  </script>
+<script>
+  // 🔽 Smooth scroll
+  document.getElementById("quoteBtn").addEventListener("click", () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  });
+  document.getElementById("quoteTop").addEventListener("click", () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  });
+  document.getElementById("quoteBtn2").addEventListener("click", () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  });
+</script>
 </body>
 </html>

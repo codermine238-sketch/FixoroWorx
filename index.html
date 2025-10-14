@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic SEO -->
-<meta name="title" content="Fixoro Worx | Solar, Woodwork, Cameras & Advertisement Services">
-<meta name="description" content="Fixoro Worx offers professional solar panel installation, woodwork, security cameras, and advertising solutions across Pakistan. Contact us for reliable and affordable services.">
-<meta name="keywords" content="Fixoro, Fixoro Worx, Solar Installation Pakistan, Woodwork, Camera Installation, Advertising, Sign Boards, Home Solutions, Business Services">
-<meta name="author" content="Fixoro Worx Team">
-
-<!-- Social Media Display -->
-<meta property="og:title" content="Fixoro Worx - Professional Home & Business Solutions">
-<meta property="og:description" content="We provide solar, woodwork, camera installation, and advertising services across Pakistan.">
-<meta property="og:image" content="https://yourwebsite.github.io/FixoroWorx/logo.png">
-<meta property="og:url" content="https://yourusername.github.io/FixoroWorx/">
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Favicon -->
-<link rel="icon" href="logo.png" type="image/png">
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fixoro Worx</title>
-
+<title>Fixoro Worx - Home & Business Solutions</title>
+<meta name="description" content="Fixoro Worx offers professional solar installation, custom woodwork, security camera setup, and advertisement solutions in Pakistan. Request your free quote now!">
+<meta name="keywords" content="Fixoro Worx, solar installation, custom woodwork, CCTV setup, sign boards, advertisement solutions, Pakistan, professional services, free quote">
+<meta name="author" content="Fixoro Worx">
 <style>
 :root {
   --fixoro-blue:#1f4f5a;
@@ -30,95 +16,76 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
 body{background:var(--fixoro-light);color:#333;scroll-behavior:smooth;}
 header{background-color:var(--fixoro-blue);color:white;padding:15px 40px;display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;width:100%;z-index:999;box-shadow:0 3px 8px rgba(0,0,0,0.2);}
-.logo-area{display:flex;align-items:center;gap:10px;}
-.logo{width:50px;}
-nav{display:flex;align-items:center;gap:20px;}
-nav a{color:white;text-decoration:none;font-weight:500;transition:0.3s;}
+header .logo-area{display:flex;align-items:center;gap:10px;}
+header .logo-area img{width:50px;}
+nav a{color:white;text-decoration:none;font-weight:500;margin-left:20px;transition:0.3s;}
 nav a:hover{color:var(--fixoro-orange);}
 .hero{width:100%;height:95vh;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right, rgba(31,79,90,0.85), rgba(244,140,6,0.8)), url('banner-bg.jpg') center/cover no-repeat;margin-top:70px;position:relative;}
-.hero-content{max-width:900px;padding:50px 30px;background:rgba(0,0,0,0.45);border-radius:16px;}
+.hero-content{max-width:900px;padding:50px 30px;border-radius:16px;background:rgba(0,0,0,0.3);}
 .hero h2{font-size:42px;margin-bottom:15px;color:#fff;}
 .hero p{font-size:18px;margin-bottom:25px;color:#f2f2f2;}
 .hero button{border:none;color:white;padding:12px 35px;border-radius:8px;cursor:pointer;font-size:16px;font-weight:600;transition:0.3s;margin:5px;}
 .hero button#quoteBtn{background:linear-gradient(90deg,var(--fixoro-orange),#ffb703);}
 .hero button#quoteBtn:hover{transform:translateY(-3px);}
-.hero button#signInBtn{background:#4285F4;}
-.hero button#signInBtn:hover{opacity:0.9;transform:translateY(-3px);}
-.hero button#reviewsBtn{background:linear-gradient(90deg,var(--fixoro-orange),#ffb703);}
-.hero button#reviewsBtn:hover{transform:translateY(-3px);}
 
-/* ⭐ Reviews Summary Section */
-.reviews-summary{background:white;border-radius:12px;padding:25px;max-width:700px;margin:30px auto;text-align:center;box-shadow:0 6px 15px rgba(0,0,0,0.1);}
-.reviews-summary h3{font-size:24px;color:var(--fixoro-blue);margin-bottom:10px;}
-.rating-overall{font-size:40px;color:var(--fixoro-orange);margin-bottom:10px;}
-.review-count{color:#555;margin-bottom:15px;}
-.rating-bars{display:flex;flex-direction:column;gap:6px;align-items:flex-start;margin:0 auto;max-width:250px;}
-.rating-bar{display:flex;align-items:center;gap:6px;width:100%;}
-.rating-bar span{width:20px;}
-.rating-bar .bar{flex:1;height:12px;background:#ddd;border-radius:6px;overflow:hidden;position:relative;}
-.rating-bar .bar div{height:100%;background:var(--fixoro-orange);}
+/* Services */
 section{padding:70px 20px;}
 section h2{font-size:30px;color:var(--fixoro-blue);margin-bottom:20px;text-align:center;position:relative;}
 section h2::after{content:"";display:block;width:60px;height:4px;background:var(--fixoro-orange);margin:10px auto 0;border-radius:2px;}
 .service-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;margin-top:30px;}
-.service{width:220px;background:var(--fixoro-light);border-radius:12px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,0.08);transition:0.3s;}
+.service{width:220px;background:var(--fixoro-light);border-radius:12px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,0.08);transition:0.3s;text-align:center;}
 .service:hover{transform:translateY(-6px);box-shadow:0 6px 15px rgba(0,0,0,0.15);}
-.service img{width:60px;height:60px;margin-bottom:12px;}
+.service img{width:60px;height:60px;margin:0 auto 12px;display:block;}
 .service h3{color:var(--fixoro-orange);font-size:18px;margin-bottom:6px;}
 .service p{font-size:14px;color:#555;}
+
+/* Why Us & How it works */
 .why-us, .how-it-works{background:white;border-radius:12px;padding:35px;max-width:1000px;margin:20px auto;box-shadow:0 6px 15px rgba(0,0,0,0.1);}
-.why-us .grid, .how-it-works .grid{display:flex;flex-wrap:wrap;gap:25px;justify-content:center;margin-top:20px;}
+.grid{display:flex;flex-wrap:wrap;gap:25px;justify-content:center;margin-top:20px;}
 .grid-item{flex:1 1 200px;background:var(--fixoro-light);padding:18px;border-radius:10px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,0.08);}
 .grid-item h3{color:var(--fixoro-orange);margin-bottom:8px;}
-.contact{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;background:var(--fixoro-blue);color:white;}
-.contact-info{max-width:300px;text-align:left;}
+
+/* Contact & Quote */
+.contact, .quote-section{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;padding:40px 20px;}
+.contact-info{flex:1;min-width:250px;text-align:left;}
 .contact-info h3{color:var(--fixoro-orange);margin-bottom:12px;}
-form{width:340px;display:flex;flex-direction:column;gap:10px;}
-form input, form textarea{padding:12px;border-radius:6px;border:none;outline:none;font-size:14px;}
-form button{background:linear-gradient(90deg,var(--fixoro-orange),#ffb703);color:white;border:none;padding:12px;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;transition:0.3s;}
-form button:hover{opacity:0.9;transform:translateY(-2px);}
+.contact-form{flex:1;min-width:300px;}
+.contact-form input, .contact-form textarea, .contact-form select{width:100%;padding:12px;border-radius:6px;border:none;margin-bottom:12px;font-size:14px;}
+.contact-form button{background:linear-gradient(90deg,var(--fixoro-orange),#ffb703);color:white;border:none;padding:12px;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;transition:0.3s;width:100%;}
+.contact-form button:hover{opacity:0.9;transform:translateY(-2px);}
+
 footer{background-color:var(--fixoro-blue);color:#ccc;text-align:center;padding:20px 0;font-size:14px;}
-@media(max-width:768px){nav{display:none;}.hero h2{font-size:28px;}section{padding:50px 15px;}.contact{flex-direction:column;align-items:center;} .contact-info, form{text-align:center;width:100%;}.reviews-summary{padding:20px;}}
+
+@media(max-width:768px){
+  nav{display:none;}
+  .hero h2{font-size:28px;}
+  section{padding:50px 15px;}
+  .contact, .quote-section{flex-direction:column;align-items:center;}
+  .contact-info, .contact-form{text-align:center;width:100%;}
+}
 </style>
 </head>
 <body>
 
 <header>
   <div class="logo-area">
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="logo.png" alt="Logo">
     <h1>Fixoro Worx</h1>
   </div>
- <nav>
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#why-us">Why Us</a>
-  <a href="#how-it-works">How It Works</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero" id="home">
   <div class="hero-content">
     <h2>Professional Solutions for Your Home & Business</h2>
-    <p>Solar Installation | Custom Woodwork | Security Cameras | Advertising</p>
-    
+    <p>Solar Installation | Custom Woodwork | Security Cameras | Advertisement</p>
     <button id="quoteBtn">Get Free Quote</button>
-    <button id="signInBtn">Sign in with Google</button>
-    <button id="reviewsBtn">See Reviews</button>
-  </div>
-</section>
-
-<!-- ⭐ Reviews Summary Section -->
-<section class="reviews-summary">
-  <h3>Customer Reviews</h3>
-  <div class="rating-overall">4.1 ★</div>
-  <div class="review-count">9.92M reviews</div>
-  <div class="rating-bars">
-    <div class="rating-bar"><span>5</span><div class="bar"><div style="width:65%"></div></div></div>
-    <div class="rating-bar"><span>4</span><div class="bar"><div style="width:20%"></div></div></div>
-    <div class="rating-bar"><span>3</span><div class="bar"><div style="width:10%"></div></div></div>
-    <div class="rating-bar"><span>2</span><div class="bar"><div style="width:4%"></div></div></div>
-    <div class="rating-bar"><span>1</span><div class="bar"><div style="width:1%"></div></div></div>
   </div>
 </section>
 
@@ -128,7 +95,7 @@ footer{background-color:var(--fixoro-blue);color:#ccc;text-align:center;padding:
     <div class="service"><img src="solar.png" alt=""><h3>Solar Installation</h3><p>High-quality solar panel installation for sustainable energy solutions</p></div>
     <div class="service"><img src="woodwork.png" alt=""><h3>Custom Woodwork</h3><p>Expert carpentry and custom furniture crafted to your specifications</p></div>
     <div class="service"><img src="camera.png" alt=""><h3>Security Cameras</h3><p>Professional security camera installation and monitoring systems</p></div>
-    <div class="service"><img src="ad.png" alt=""><h3>Advertisement Solutions</h3><p>Eye-catching sign boards, banners, and promotional materials</p></div>
+    <div class="service"><img src="ad.png" alt=""><h3>Advertisement Solutions</h3><p>Eye-catching sign boards, banners, and promotional materials @2025</p></div>
   </div>
 </section>
 
@@ -151,22 +118,34 @@ footer{background-color:var(--fixoro-blue);color:#ccc;text-align:center;padding:
   </div>
 </section>
 
+<section class="quote-section" id="quote-section">
+  <h2>Request a Free Quote</h2>
+  <div class="contact-form">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="text" id="phone" placeholder="Phone Number" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="text" id="location" placeholder="Location / City" required>
+    <select id="service" required>
+      <option value="">Select Service</option>
+      <option value="Solar Installation">Solar Installation</option>
+      <option value="CCTV Setup">CCTV Setup</option>
+      <option value="Woodwork">Woodwork</option>
+      <option value="Sign Boards">Sign Boards</option>
+      <option value="Other">Other</option>
+    </select>
+    <textarea id="details" placeholder="Project Details..." rows="4" required></textarea>
+    <button id="sendQuoteBtn">Send on WhatsApp</button>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div class="contact-info">
     <h3>Contact Information</h3>
-    <p>📞 0300-XXXXXXX</p>
-    <p>✉️ info@fixoro.com</p>
+    <p>📞 03019800296</p>
+    <p>✉️ fixoraworx.pk@gmail.com</p>
     <p>📍 City, Pakistan</p>
     <p>🕘 Mon-Sat: 8AM - 8PM | Sun: 10AM - 6PM</p>
   </div>
-  <form>
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <input type="text" placeholder="Phone Number" required>
-    <input type="text" placeholder="Service Interested In" required>
-    <textarea rows="4" placeholder="Tell us about your project..." required></textarea>
-    <button type="submit">Request Free Quote</button>
-  </form>
 </section>
 
 <footer>
@@ -174,28 +153,60 @@ footer{background-color:var(--fixoro-blue);color:#ccc;text-align:center;padding:
 </footer>
 
 <script>
-  // ⭐ Smooth Scroll
-  const links = document.querySelectorAll('nav a, #quoteBtn');
-  links.forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const targetId = link.getAttribute('href') || "#home";
-      const targetEl = document.querySelector(targetId);
-      if(targetEl){ targetEl.scrollIntoView({behavior:'smooth'}); }
-    });
+// Smooth scroll
+document.querySelectorAll('nav a, #quoteBtn').forEach(link=>{
+  link.addEventListener('click', e=>{
+    e.preventDefault();
+    const target = link.getAttribute('href');
+    if(target === "#") return;
+    if(target.includes(".html")){
+      window.location.href = target;
+      return;
+    }
+    const el = document.querySelector(target);
+    if(el) el.scrollIntoView({behavior:'smooth'});
   });
+});
 
-  // ⭐ Google Sign-In (placeholder)
-  const signInBtn = document.getElementById("signInBtn");
-  signInBtn.addEventListener("click", () => {
-    alert("Google Sign-In will work after Firebase authorization is fixed.");
-  });
+// 🌟 Fixoro Worx - Stylish & Attractive WhatsApp Quote
+document.getElementById("sendQuoteBtn").addEventListener("click", ()=>{
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const location = document.getElementById("location").value.trim();
+  const service = document.getElementById("service").value.trim();
+  const details = document.getElementById("details").value.trim();
 
-  // ⭐ Reviews Button (placeholder)
-  const reviewsBtn = document.getElementById("reviewsBtn");
-  reviewsBtn.addEventListener("click", () => {
-    alert("Redirect to reviews.html when ready.");
-  });
+  if(!name || !phone || !email || !location || !service || !details){
+    alert("⚠️ Please fill all fields!");
+    return;
+  }
+
+  const whatsappNumber = "923019800296";
+
+  // 💌 Attractive, Brand-style Message
+  const message =
+`*💠✨ Fixoro Worx - Quote Request ✨💠*%0A
+────────────────────────────%0A
+👤 *Name:* ${name}%0A
+📞 *Phone:* ${phone}%0A
+✉️ *Email:* ${email}%0A
+📍 *Location:* ${location}%0A
+🛠️ *Service Required:* ${service}%0A
+💬 *Project Details:*%0A${details}%0A
+────────────────────────────%0A
+🌟 *Thank you for choosing Fixoro Worx!* 🌟%0A
+📌 *We will contact you very soon!*%0A
+💡 *Stay tuned for professional solutions & quality service!*`;
+
+  const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+  window.open(url,"_blank");
+});
+
+// Quote button opens quote-section
+document.getElementById("quoteBtn").addEventListener("click", ()=>{
+  document.querySelector('#quote-section').scrollIntoView({behavior:'smooth'});
+});
 </script>
 
 </body>
